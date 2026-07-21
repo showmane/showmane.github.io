@@ -8,9 +8,20 @@ body { font-family: 'Poppins', sans-serif; background-color: #faf8f5; }
 .hero-logo { height: 150px; }
 .btn-primary { background-color: #cca453; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 4px; }
 .about-grid, .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
 .menu-category { background: #fff; padding: 20px; }
 .contact-info { padding: 20px; }
 .map-container { height: 300px; }
-.whatsapp-sticky { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 15px; border-radius: 50%; }
 @media (max-width: 768px) { .about-grid, .contact-grid { grid-template-columns: 1fr; } }
+/* ... [Refer to structure in original code block for CSS] ... */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
