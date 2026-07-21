@@ -6,16 +6,18 @@
     <title>Showmane Family Salon - Premium Hair & Beauty Services</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for Modern Typography -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header & Navigation -->
     <header>
         <div class="container navbar">
-            <div class="logo">SHOWMANE<span>.</span></div>
+            <div class="logo-container">
+                <img src="logo.png" alt="Showmane Family Salon Logo" class="site-logo">
+            </div>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
@@ -25,10 +27,10 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');">
+    <!-- Hero Section with Centered Transparent Logo -->
+    <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://unsplash.com');">
         <div class="hero-content">
-            <h1>SHOWMANE FAMILY SALON</h1>
+            <img src="logo.png" alt="Showmane Family Salon" class="hero-logo">
             <p>Premium Hair, Beauty, & Grooming Services for the Entire Family</p>
             <a href="#services" class="btn-primary">View Our Services</a>
         </div>
@@ -55,9 +57,9 @@
             <p class="section-subtitle">Expert pampering at competitive family pricing</p>
             
             <div class="menu-grid">
-                <!-- Category 1: Hair Styling -->
+                <!-- Category 1: Women Hair Styling & Care -->
                 <div class="menu-category">
-                    <h3><img src="https://unsplash.com" alt="Haircut icon" class="cat-thumb">Women Hair Styling & Care</h3>
+                    <h3><img src="https://unsplash.com" alt="Haircut icon" class="cat-thumb"> Women Hair Care</h3>
                     <ul class="price-list">
                         <li><span>Adult Classic Haircut</span> <span>600 INR</span></li>
                         <li><span>Kids Styling (Under 12)</span> <span>300 INR</span></li>
@@ -70,10 +72,10 @@
                 <div class="menu-category">
                     <h3><img src="https://unsplash.com" alt="Hair Color icon" class="cat-thumb"> Color & Highlights</h3>
                     <ul class="price-list">
-                        <li><span>Root Touch-Up</span> <span>400</span></li>
-                        <li><span>Full Single-Process Color</span> <span>800</span></li>
-                        <li><span>Balayage / Ombre</span> <span>$140+</span></li>
-                        <li><span>Custom Highlights (Full)</span> <span>$120+</span></li>
+                        <li><span>Root Touch-Up</span> <span>400 INR</span></li>
+                        <li><span>Full Single-Process Color</span> <span>800 INR</span></li>
+                        <li><span>Balayage / Ombre style</span> <span>4500 INR</span></li>
+                        <li><span>Custom Highlights (Full)</span> <span>3500 INR</span></li>
                     </ul>
                 </div>
 
@@ -81,10 +83,10 @@
                 <div class="menu-category">
                     <h3><img src="https://unsplash.com" alt="Facial icon" class="cat-thumb"> Skincare & Facials</h3>
                     <ul class="price-list">
-                        <li><span>Express Glow Facial</span> <span>1200</span></li>
-                        <li><span>Hydra-Dermabrasion Facial</span> <span>2500</span></li>
-                        <li><span>Threading (Brows & Lip)</span> <span>50</span></li>
-                        <li><span>Organic Full Body Waxing</span> <span>$70+</span></li>
+                        <li><span>Express Glow Facial</span> <span>1200 INR</span></li>
+                        <li><span>Hydra-Dermabrasion Facial</span> <span>2500 INR</span></li>
+                        <li><span>Threading (Brows & Lip)</span> <span>50 INR</span></li>
+                        <li><span>Organic Full Body Waxing</span> <span>2000 INR</span></li>
                     </ul>
                 </div>
 
@@ -109,11 +111,12 @@
             <div class="contact-info">
                 <h4>Hours of Operation</h4>
                 <p>📅 Monday - Sunday: 7:00 AM - 10:00 PM</p>
-                <p>📅 Tuesday: Holiday</p>
+                <p class="holiday-note">⚠️ Tuesday: Holiday</p>
                 
                 <h4>Contact Details</h4>
-                <p>📍 BhudeviHills, Kukatpally, Jagathgiri Gutta, Hyderabad,  land Mark Near: Shivaji Statue</p>
-                <p>📞 Phone: 9948100888 </p>
+                <p>📍 BhudeviHills, Kukatpally, Jagathgiri Gutta, Hyderabad</p>
+                <p class="landmark-text">🗺️ Landmark: Near Shivaji Statue</p>
+                <p>📞 Phone: +91 9948100888</p>
                 <p>✉️ Email: showmanesalon@gmail.com</p>
             </div>
             <div class="booking-cta">
