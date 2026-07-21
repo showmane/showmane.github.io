@@ -1,310 +1,35 @@
-/* Reset and Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Core Styling for Showmane Salon */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; color: #333; background-color: #faf8f5; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+.section { padding: 60px 0; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    background-color: #faf8f5;
-}
+/* Header & Nav */
+header { background: #fff; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
+.site-logo { height: 60px; }
+nav a { text-decoration: none; color: #4a4a4a; margin-left: 20px; font-weight: 600; }
+.btn-nav { background: #1a1a1a; color: #fff; padding: 8px 15px; border-radius: 4px; }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+/* Hero */
+.hero { height: 70vh; background-size: cover; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; }
+.hero-logo { max-height: 150px; margin-bottom: 20px; }
+.btn-primary { background: #cca453; color: #fff; padding: 12px 30px; text-decoration: none; border-radius: 4px; }
 
-.section {
-    padding: 80px 0;
-}
+/* Services */
+.services-bg { background-color: #f5f0e6; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+.menu-category { background: #fff; padding: 25px; border-radius: 8px; }
+.price-list li { display: flex; justify-content: space-between; margin-bottom: 10px; }
+.price-list li span:last-child { color: #cca453; font-weight: 700; }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-}
+/* WhatsApp Sticky Button */
+.whatsapp-sticky { position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 2000; }
+.whatsapp-sticky:hover { background-color: #128C7E; }
 
-/* Header & Navigation */
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.site-logo {
-    height: 75px;
-    width: auto;
-    display: block;
-}
-
-nav a {
-    text-decoration: none;
-    color: #4a4a4a;
-    margin-left: 25px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #cca453; /* Match Logo Gold */
-}
-
-.btn-nav {
-    background-color: #1a1a1a;
-    color: #fff !important;
-    padding: 8px 20px;
-    border-radius: 4px;
-}
-
-.btn-nav:hover {
-    background-color: #cca453;
-}
-
-/* Hero Section with Logo Integration */
-.hero {
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-}
-
-.hero-logo {
-    max-height: 220px;
-    width: auto;
-    margin-bottom: 25px;
-    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.5));
-}
-
-.hero-content p {
-    font-size: 1.4rem;
-    margin-bottom: 35px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-.btn-primary {
-    display: inline-block;
-    background-color: #cca453; /* Match Logo Gold */
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 40px;
-    font-weight: 600;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-    transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-    background-color: #1a1a1a;
-}
-
-/* About Section */
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
-}
-
-.about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.about-text p {
-    margin-bottom: 15px;
-    color: #666;
-}
-
-.about-img img {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-/* Services Section */
-.services-bg {
-    background-color: #f5f0e6;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #777;
-    margin-bottom: 50px;
-}
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-}
-
-.menu-category {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
-}
-
-.menu-category h3 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #f3eee6;
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.cat-thumb {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.price-list {
-    list-style: none;
-}
-
-.price-list li {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-size: 0.95rem;
-}
-
-.price-list li span:first-child {
-    font-weight: 600;
-}
-
-.price-list li span:last-child {
-    color: #cca453; /* Match Logo Gold */
-    font-weight: 700;
-}
-
-/* Contact & Map Layout Configuration */
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    background: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
-}
-
-.contact-info h4 {
-    margin: 20px 0 5px 0;
-    font-size: 1.1rem;
-    color: #cca453;
-}
-
-.holiday-note {
-    color: #d9534f;
-    font-weight: 600;
-}
-
-.landmark-text {
-    font-style: italic;
-    color: #555;
-    font-size: 0.9rem;
-    margin-top: -5px;
-    margin-bottom: 20px;
-}
-
-.call-action-box {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px dashed #e2decb;
-}
-
-.call-action-box p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-/* Map Display Box Setup */
-.map-container {
-    width: 100%;
-    min-height: 350px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* Footer */
-footer {
-    background-color: #1a1a1a;
-    color: #777;
-    text-align: center;
-    padding: 30px 20px;
-    font-size: 0.85rem;
-    border-top: 1px solid #2a2a2a;
-}
-
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-    }
-    nav a {
-        margin: 0 10px;
-    }
-    .hero-logo {
-        max-height: 140px;
-    }
-    .hero-content p {
-        font-size: 1.1rem;
-    }
-    .contact-grid {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-    .map-container {
-        min-height: 280px;
-        order: 2;
-    }
-    .about-grid {
-        grid-template-columns: 1fr;
-    }
+    .navbar { flex-direction: column; }
+    nav a { margin: 5px; }
 }
