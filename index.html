@@ -6,9 +6,9 @@
     <title>Showmane Family Salon - Premium Hair & Beauty Services</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts for Modern Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -74,7 +74,7 @@
                     <ul class="price-list">
                         <li><span>Root Touch-Up</span> <span>400 INR</span></li>
                         <li><span>Full Single-Process Color</span> <span>800 INR</span></li>
-                        <li><span>Balayage / Ombre style</span> <span>4500 INR</span></li>
+                        <li><span>Balayage / Ombre Style</span> <span>4500 INR</span></li>
                         <li><span>Custom Highlights (Full)</span> <span>3500 INR</span></li>
                     </ul>
                 </div>
@@ -104,10 +104,12 @@
         </div>
     </section>
 
-    <!-- Contact & Booking Section -->
+    <!-- Contact & Booking Section with Google Map -->
     <section id="contact" class="container section">
         <h2 class="section-title">Visit or Book an Appointment</h2>
         <div class="contact-grid">
+            
+            <!-- Left Side: Contact Information -->
             <div class="contact-info">
                 <h4>Hours of Operation</h4>
                 <p>📅 Monday - Sunday: 7:00 AM - 10:00 PM</p>
@@ -118,12 +120,26 @@
                 <p class="landmark-text">🗺️ Landmark: Near Shivaji Statue</p>
                 <p>📞 Phone: +91 9948100888</p>
                 <p>✉️ Email: showmanesalon@gmail.com</p>
+
+                <div class="call-action-box">
+                    <p>Walk-ins are welcome! Contact us directly to reserve your slot.</p>
+                    <a href="tel:9948100888" class="btn-primary">Call to Book Now</a>
+                </div>
             </div>
-            <div class="booking-cta">
-                <h3>Ready for a transformation?</h3>
-                <p>Walk-ins are always welcome, but reserving your slot secures your preferred specialist. Give us a call today or stop by with your family!</p>
-                <a href="tel:9948100888" class="btn-primary">Call to Book Now</a>
+
+            <!-- Right Side: Live Interactive Map -->
+            <div class="map-container">
+                <iframe 
+                    src="https://google.com" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
         </div>
     </section>
 
