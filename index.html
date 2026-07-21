@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showmane Family Salon - Premium Hair & Beauty Services</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Modern Typography -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Header & Navigation -->
     <header>
         <div class="container navbar">
             <div class="logo-container">
@@ -24,19 +27,22 @@
         </div>
     </header>
 
+    <!-- Hero Section with Centered Transparent Logo -->
     <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('https://unsplash.com');">
         <div class="hero-content">
             <img src="logo.jpg" alt="Showmane Family Salon" class="hero-logo">
-            <p>Premium Hair, Beauty, & Grooming Services</p>
+            <p>Premium Hair, Beauty, & Grooming Services for the Entire Family</p>
             <a href="#services" class="btn-primary">View Our Services</a>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="container section">
         <div class="about-grid">
             <div class="about-text">
                 <h2>Welcome to Showmane</h2>
-                <p>Top-tier hair styling, coloring, and skincare services for the whole family.</p>
+                <p>At Showmane Family Salon, we believe that great style brings out true confidence. We offer top-tier hair styling, coloring, skincare, and bridal grooming packages tailored for men, women, and kids.</p>
+                <p>Our certified stylists utilize premium, eco-friendly products to give your hair and skin the luxurious care they truly deserve.</p>
             </div>
             <div class="about-img">
                 <img src="https://unsplash.com" alt="Salon Interior">
@@ -44,43 +50,103 @@
         </div>
     </section>
 
+    <!-- Services & Pricing Section -->
     <section id="services" class="services-bg section">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2 class="section-title">Our Services & Pricing</h2>
+            <p class="section-subtitle">Expert pampering at competitive family pricing</p>
+            
             <div class="menu-grid">
+                <!-- Category 1: Women Hair Styling & Care -->
                 <div class="menu-category">
-                    <h3>Hair Care</h3>
+                    <h3><img src="https://unsplash.com" alt="Haircut icon" class="cat-thumb"> Women Hair Care</h3>
                     <ul class="price-list">
-                        <li><span>Adult Cut</span> <span>600 INR</span></li>
-                        <li><span>Kids Cut</span> <span>300 INR</span></li>
+                        <li><span>Adult Classic Haircut</span> <span>600 INR</span></li>
+                        <li><span>Kids Styling (Under 12)</span> <span>300 INR</span></li>
+                        <li><span>Signature Blowout & Wash</span> <span>300 INR</span></li>
+                        <li><span>Deep Conditioning Therapy</span> <span>1000 INR</span></li>
+                    </ul>
+                </div>
+
+                <!-- Category 2: Color & Highlights -->
+                <div class="menu-category">
+                    <h3><img src="https://unsplash.com" alt="Hair Color icon" class="cat-thumb"> Color & Highlights</h3>
+                    <ul class="price-list">
+                        <li><span>Root Touch-Up</span> <span>400 INR</span></li>
+                        <li><span>Full Single-Process Color</span> <span>800 INR</span></li>
+                        <li><span>Balayage / Ombre Style</span> <span>4500 INR</span></li>
+                        <li><span>Custom Highlights (Full)</span> <span>3500 INR</span></li>
+                    </ul>
+                </div>
+
+                <!-- Category 3: Skin & Beauty -->
+                <div class="menu-category">
+                    <h3><img src="https://unsplash.com" alt="Facial icon" class="cat-thumb"> Skincare & Facials</h3>
+                    <ul class="price-list">
+                        <li><span>Express Glow Facial</span> <span>1200 INR</span></li>
+                        <li><span>Hydra-Dermabrasion Facial</span> <span>2500 INR</span></li>
+                        <li><span>Threading (Brows & Lip)</span> <span>50 INR</span></li>
+                        <li><span>Organic Full Body Waxing</span> <span>2000 INR</span></li>
+                    </ul>
+                </div>
+
+                <!-- Category 4: Men's Grooming -->
+                <div class="menu-category">
+                    <h3><img src="https://unsplash.com" alt="Beard trim icon" class="cat-thumb"> Men's Grooming</h3>
+                    <ul class="price-list">
+                        <li><span>Executive Haircut & Style</span> <span>120 INR</span></li>
+                        <li><span>Beard Trim & Hot Towel Shave</span> <span>80 INR</span></li>
+                        <li><span>Men's Charcoal Facial Mask</span> <span>400 INR</span></li>
+                        <li><span>Hair Coloring / Grey Blending</span> <span>400 INR</span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact & Booking Section with Google Map -->
     <section id="contact" class="container section">
-        <h2 class="section-title">Contact & Location</h2>
+        <h2 class="section-title">Visit or Book an Appointment</h2>
         <div class="contact-grid">
+            
+            <!-- Left Side: Contact Information -->
             <div class="contact-info">
-                <h4>Hours</h4>
-                <p>Mon - Sun: 7:00 AM - 10:00 PM (Tue: Closed)</p>
-                <h4>Location</h4>
-                <p>BhudeviHills, Kukatpally, Hyderabad</p>
-                <h4>Phone</h4>
-                <p>+91 9948100888</p>
-                <a href="tel:9948100888" class="btn-primary">Call to Book</a>
+                <h4>Hours of Operation</h4>
+                <p>📅 Monday - Sunday: 7:00 AM - 10:00 PM</p>
+                <p class="holiday-note">⚠️ Tuesday: Holiday</p>
+                
+                <h4>Contact Details</h4>
+                <p>📍 BhudeviHills, Kukatpally, Jagathgiri Gutta, Hyderabad</p>
+                <p class="landmark-text">🗺️ Landmark: Near Shivaji Statue</p>
+                <p>📞 Phone: +91 9948100888</p>
+                <p>✉️ Email: showmanesalon@gmail.com</p>
+
+                <div class="call-action-box">
+                    <p>Walk-ins are welcome! Contact us directly to reserve your slot.</p>
+                    <a href="tel:9948100888" class="btn-primary">Call to Book Now</a>
+                </div>
             </div>
+
+            <!-- Right Side: Live Interactive Map -->
             <div class="map-container">
-                <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe 
+                    src="https://google.com" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; border-radius: 8px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
+
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 SHOWMANE FAMILY SALON.</p>
+        <p>&copy; 2026 SHOWMANE FAMILY SALON. All Rights Reserved. Powered by GitHub Pages.</p>
     </footer>
 
-    <a href="https://wa.me" class="whatsapp-sticky" target="_blank">Chat</a>
 </body>
 </html>
