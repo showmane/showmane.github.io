@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Showmane Family Salon - Premium Hair & Beauty Services</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container navbar">
-            <div class="logo-container"><img src="logo.jpg" alt="Showmane Family Salon Logo" class="site-logo"></div>
+            <div class="logo-container">
+                <img src="logo.jpg" alt="Showmane Family Salon Logo" class="site-logo">
+            </div>
             <nav>
-                <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact" class="btn-nav">Book Now</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact" class="btn-nav">Book Now</a>
             </nav>
         </div>
     </header>
@@ -25,23 +32,55 @@
         </div>
     </section>
 
-    <section id="services" class="services-bg section">
-        <div class="container">
-            <h2 class="section-title">Our Services & Pricing</h2>
-            <div class="menu-grid">
-                <!-- Services Menu Categories -->
-                <div class="menu-category"><h3>Women Hair Care</h3><ul class="price-list"><li><span>Adult Cut</span> <span>600 INR</span></li><li><span>Blowout</span> <span>300 INR</span></li></ul></div>
-                <div class="menu-category"><h3>Color</h3><ul class="price-list"><li><span>Root Touch-Up</span> <span>400 INR</span></li><li><span>Balayage</span> <span>4500 INR</span></li></ul></div>
-                <div class="menu-category"><h3>Skincare</h3><ul class="price-list"><li><span>Facial</span> <span>1200 INR</span></li><li><span>Waxing</span> <span>2000 INR</span></li></ul></div>
-                <div class="menu-category"><h3>Men's Grooming</h3><ul class="price-list"><li><span>Haircut</span> <span>120 INR</span></li><li><span>Beard Trim</span> <span>80 INR</span></li></ul></div>
-                <div class="menu-category"><h3>Pedicure</h3><ul class="price-list"><li><span>Spa Pedicure</span> <span>500 INR</span></li><li><span>Luxury Pedicure</span> <span>800 INR</span></li></ul></div>
+    <section id="about" class="container section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Welcome to Showmane</h2>
+                <p>Top-tier hair styling, coloring, and skincare services for the whole family.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://unsplash.com" alt="Salon Interior">
             </div>
         </div>
     </section>
 
-    <!-- Floating WhatsApp Action Button -->
-    <a href="https://wa.me!" class="whatsapp-sticky" target="_blank">
-        <svg xmlns="http://w3.org" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.69-4.98c-.202-.101-1.194-.588-1.379-.653-.185-.065-.32-.097-.456.097-.136.195-.527.653-.646.789-.12.136-.237.153-.439.052-.2-.101-.843-.311-1.605-.989-.593-.53-1.002-1.182-1.118-1.381-.117-.201-.013-.31.088-.41.09-.09.201-.237.301-.356.1-.12.134-.201.202-.338.067-.137.034-.251-.017-.353-.05-.102-.456-1.1-.625-1.505-.164-.397-.33-.342-.456-.349-.117-.006-.252-.007-.388-.007-.136 0-.356.05-.542.252-.186.2-.713.696-.713 1.7 0 1.006.732 1.979.833 2.113.101.137 1.44 2.2 3.492 3.084.488.21 1.002.337 1.35.45.497.158.951.135 1.309.083.399-.057 1.194-.488 1.362-1.03.168-.543.168-1.01.117-1.103-.05-.094-.185-.14-.387-.241z"/></svg>
-    </a>
+    <section id="services" class="services-bg section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Hair Care</h3>
+                    <ul class="price-list">
+                        <li><span>Adult Cut</span> <span>600 INR</span></li>
+                        <li><span>Kids Cut</span> <span>300 INR</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container section">
+        <h2 class="section-title">Contact & Location</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h4>Hours</h4>
+                <p>Mon - Sun: 7:00 AM - 10:00 PM (Tue: Closed)</p>
+                <h4>Location</h4>
+                <p>BhudeviHills, Kukatpally, Hyderabad</p>
+                <h4>Phone</h4>
+                <p>+91 9948100888</p>
+                <a href="tel:9948100888" class="btn-primary">Call to Book</a>
+            </div>
+            <div class="map-container">
+                <iframe src="https://google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SHOWMANE FAMILY SALON.</p>
+    </footer>
+
+    <a href="https://wa.me" class="whatsapp-sticky" target="_blank">Chat</a>
 </body>
 </html>
